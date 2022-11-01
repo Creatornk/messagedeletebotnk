@@ -40,7 +40,7 @@ async def start(bot, message):
 @User.on_message(filters.chat(GROUPS))
 async def delete(user, message):
     try:
-       if message.from_user.id in members:
+       if message.from_user.id in usr:
           return
        else:
           await asyncio.sleep(TIME)
